@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+:root {
+
+    --BrightRed: hsl(356, 69%, 56%);
+    ;
+    --LimeGreen: hsl(163, 72%, 41%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --YouTube: hsl(348, 97%, 39%);
+    --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    /* Dark Theme */
+    --Toggle: hsl(230, 22%, 74%);
+    /*  Light Theme  */
+    --VeryDarkBlue-BG: hsl(230, 17%, 14%);
+    /*  Dark Theme  */
+    --VeryDarkBlue-TopBGPattern: hsl(232, 19%, 15%);
+    --DarkDesaturatedBlue-CardBG: hsl(228, 28%, 20%);
+    --DesaturatedBlue-Text: hsl(228, 34%, 66%);
+    --White-Text: hsl(0, 0%, 100%);
+    --White-BG: hsl(0, 0%, 100%);
+    /* Light Theme */
+    --VeryPaleBlue-TopBGPattern: hsl(225, 100%, 98%);
+    --LightGrayishBlue-CardBG: hsl(227, 47%, 96%);
+    --DarkGrayishBlue-Text: hsl(228, 12%, 44%);
+    --VeryDarkBlue-Text: hsl(230, 17%, 14%);
+}
+
+@media (min-width: 568px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: var(--White-BG);
+    }
+
+    .container header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .6rem 3rem;
+        height: 30vh;
+    }
+
+    header .toggle {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    .title p {
+        border-bottom: none;
+    }
+        .title h3{
+            font-size: 28px;
+            margin-bottom: 0.4rem;
+        }
+
+    .toggle h4 {
+        white-space: nowrap;
+        margin-top: 1.4rem;
+        margin-right: 1rem;
+    }
+
+    .card-container {
+        width: 100%;
+        padding: 0 3rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+        place-content: center;
+    }
+
+    .card-container .cards {
+        width: 100%;
+        height: 15rem;
+        position: relative;
+        top: -45%;
+        margin-bottom: 0;
+
+    }
+
+    .card-container .facebook {
+        position: relative;
+        top: -45%;
+        margin-bottom: 0;
+    }
+
+    .overview {
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+        margin-top: -4rem;
+    }
+
+    .overview .overview-cards-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-bottom: -5rem;
+    }
+
+
+}
